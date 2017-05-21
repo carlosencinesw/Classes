@@ -17,7 +17,7 @@ namespace Classes
             MessageBox.Show(value, "Resposta", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        public void loadFile(TextBox textValue)
+        public void LoadFile(TextBox textValue)
         {
             TextReader readFile = new StreamReader("conversa.txt");
             textValue.Visible = true;
@@ -25,7 +25,7 @@ namespace Classes
             readFile.Close();
         }
 
-        public void saveFile(TextBox textValue)
+        public void SaveFile(TextBox textValue)
         {
             string fala = textValue.Text;
 
